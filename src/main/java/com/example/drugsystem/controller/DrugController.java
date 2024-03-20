@@ -3,10 +3,7 @@ package com.example.drugsystem.controller;
 import com.example.drugsystem.pojo.Drug;
 import com.example.drugsystem.service.DrugService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -49,6 +46,13 @@ public class DrugController {
         return drugService.removePurchaseById(id);
     }
 
+
+
+    @PostMapping("/name")
+    public String save(@RequestBody Drug user){
+
+        return user.toString();
+    }
 
 
 }
