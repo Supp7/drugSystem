@@ -21,7 +21,7 @@ public interface DrugMapper {
 
     String removePurchaseById(int id);
 
-
+    String uploadImgById(String imgUrl , int id);
 
 
 }

@@ -12,4 +12,5 @@ public class Order {
     private String name;
     private double finalPrice;
     private String transactionTime;
+    private int chargeback;
 }

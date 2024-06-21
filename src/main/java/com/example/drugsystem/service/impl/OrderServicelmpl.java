@@ -24,4 +24,10 @@ public class OrderServicelmpl implements OrderService {
     public List<Order> findAllOrder() {
         return orderMapper.findAllOrder();
     }
+
+    @Override
+    public String chargebackById(int id) {
+        orderMapper.chargebackById(id);
+        return "退单成功！";
+    }
 }

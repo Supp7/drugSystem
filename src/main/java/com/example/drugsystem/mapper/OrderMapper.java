@@ -11,4 +11,6 @@ public interface OrderMapper {
    void addOrder(String name,double finalPrice);
 
    List<Order> findAllOrder();
+
+   void chargebackById(int id);
 }
