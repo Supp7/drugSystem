@@ -43,4 +43,9 @@ public class DrugServiceImpl implements DrugService {
     public String removePurchaseById(int id) {
         return drugMapper.removePurchaseById(id);
     }
+
+    @Override
+    public String uploadImgById(String imgUrl, int id) {
+        return drugMapper.uploadImgById(imgUrl,id);
+    }
 }

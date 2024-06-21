@@ -11,4 +11,8 @@
     <select id="findAllOrder" resultType="Order" >
         select * from  `order`
     </select>
+
+    <update id="chargebackById" >
+        update `order` set chargeback=1 where id=#{id}
+    </update>
 </mapper>

@@ -9,4 +9,6 @@ public interface OrderService {
     String addOrder(String name,double finalPrice);
 
     List<Order> findAllOrder();
+
+    String chargebackById(int id);
 }

@@ -17,4 +17,6 @@ public interface DrugService {
     List<Drug> shoppingCart();
 
     String removePurchaseById(int id);
+
+    String uploadImgById(String imgUrl , int id);
 }

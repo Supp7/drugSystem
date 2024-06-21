@@ -26,9 +26,12 @@
         SELECT * FROM `drug` WHERE purchaseStatus ="1"
     </select>
 
-    <select id="removePurchaseById" resultType="Drug">
+    <update id="removePurchaseById">
         UPDATE drug SET purchaseStatus = "0" WHERE id =#{id}
-    </select>
+    </update>
 
+    <update id="uploadImgById">
+        UPDATE drug SET imgUrl = #{imgUrl} WHERE id =#{id}
+    </update>
 
 </mapper>
